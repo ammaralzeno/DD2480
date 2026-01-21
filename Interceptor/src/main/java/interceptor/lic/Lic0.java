@@ -1,8 +1,8 @@
 package Interceptor.src.main.java.interceptor.lic;
 
-public final class Lic2 {
+public final class Lic0 {
 
-    private Lic2() {}
+    private Lic0() {}
 
     public static boolean evaluate() {
         return false;

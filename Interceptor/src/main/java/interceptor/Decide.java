@@ -1,5 +1,10 @@
 package Interceptor.src.main.java.interceptor;
 
-public class Decide {
-    
+public final class Decide {
+
+    private Decide() {}
+
+    public static void decide() {
+        // to be implemented
+    }
 }
