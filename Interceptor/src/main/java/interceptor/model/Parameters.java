@@ -1,7 +1,7 @@
 package Interceptor.src.main.java.interceptor.model;
 
 public final class Parameters {
-    public double LENGTH1;
+    public static double LENGTH1;
     public double RADIUS1;
     public double EPSILON;
     public double AREA1;
