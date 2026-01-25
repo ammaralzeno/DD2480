@@ -1,6 +1,8 @@
-package Interceptor.src.main.java.interceptor.lic;
+package /*Interceptor.src.main.java.*/interceptor.lic;
 
-import Interceptor.src.main.java.interceptor.model.*; 
+import interceptor.model.Globals; 
+import interceptor.model.Parameters;
+import interceptor.model.Point;
 
 public final class Lic0 {
 

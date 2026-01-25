@@ -1,4 +1,4 @@
-package Interceptor.src.main.java.interceptor.model;
+package /*Interceptor.src.main.java.*/interceptor.model;
 
 public final class Point {
     public final double x;

@@ -1,4 +1,4 @@
-package Interceptor.src.main.java.interceptor.lic;
+package /*Interceptor.src.main.java.*/interceptor.lic;
 
 public final class Lic2 {
 
