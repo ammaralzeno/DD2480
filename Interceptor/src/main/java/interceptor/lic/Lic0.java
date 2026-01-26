@@ -1,4 +1,4 @@
-package /*Interceptor.src.main.java.*/interceptor.lic;
+package interceptor.lic;
 
 import interceptor.model.Globals; 
 import interceptor.model.Parameters;
