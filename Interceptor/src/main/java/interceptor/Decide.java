@@ -1,4 +1,4 @@
-package Interceptor.src.main.java.interceptor;
+package interceptor;
 
 public final class Decide {
 

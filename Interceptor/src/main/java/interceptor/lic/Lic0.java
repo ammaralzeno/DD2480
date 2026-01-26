@@ -1,4 +1,4 @@
-package Interceptor.src.main.java.interceptor.lic;
+package interceptor.lic;
 
 import Interceptor.src.main.java.interceptor.model.*; 
 
