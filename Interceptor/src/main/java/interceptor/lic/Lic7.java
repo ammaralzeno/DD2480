@@ -4,6 +4,11 @@ import interceptor.model.Globals;
 import interceptor.model.Parameters;
 import interceptor.model.Point;
 
+/**
+ * LIC 7: There exists at least one set of two data points separated by exactly K_PTS 
+ * consecutive intervening points that are a distance greater than the length, 
+ * LENGTH1, apart. The condition is not met when NUMPOINTS < 3.
+ */
 public class Lic7 {
 
     private Lic7() {}
@@ -34,6 +39,12 @@ public class Lic7 {
         return result;
     }
 
+    /**
+     * Calculate the distance between two planar points.
+     * @param point1
+     * @param point2
+     * @return distance
+     */
     private static double dist(Point point1, Point point2) {
         double diffx = point2.x - point1.x;
         double diffy = point2.y - point1.y;
