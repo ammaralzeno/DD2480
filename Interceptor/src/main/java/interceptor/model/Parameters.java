@@ -17,7 +17,7 @@ public final class Parameters {
     public int E_PTS;
     public int F_PTS;
     public int G_PTS;
-    public double LENGTH2;
+    public static double LENGTH2;
     public double RADIUS2;
     public double AREA2;
 }
