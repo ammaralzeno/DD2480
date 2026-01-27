@@ -3,9 +3,20 @@ package interceptor.lic;
 import interceptor.model.Globals;
 import interceptor.model.Point;
 
+/**
+ * Implementation of Launch Interceptor Condition (LIC) 6.
+ * Checks if there exists a sequence of N_PTS consecutive points such that at least
+ * one point lies at a distance greater than DIST from the line joining the
+ * first and last points of the sequence.
+ */
 public final class Lic6 {
     private Lic6() {}
 
+    /**
+     * Evaluates LIC 6. If the first and last points of the N_PTS sequence coincide,
+     * the distance is calculated from the point to that single location.
+     * @return true if the distance threshold is exceeded, false otherwise.
+     */
     public static boolean evaluate() {
         if (Globals.NUMPOINTS < 3) return false;
 
@@ -19,6 +30,7 @@ public final class Lic6 {
             for (int j = i + 1; j < i + nPts - 1; j++) {
                 Point p = Globals.POINTS[j];
                 double distance;
+
 
                 if (isSame(start, end)) {
                     distance = Math.sqrt(Math.pow(p.x - start.x, 2) + Math.pow(p.y - start.y, 2));

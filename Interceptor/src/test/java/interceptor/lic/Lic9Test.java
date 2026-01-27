@@ -31,11 +31,11 @@ public class Lic9Test {
         Globals.PARAMETERS.EPSILON = 0.1;
 
         Globals.POINTS = new Point[]{
-                new Point(1, 0), // P1
-                new Point(0, 0), // Gap (C_PTS)
-                new Point(0, 0), // P2 (Vertex)
-                new Point(0, 0), // Gap (D_PTS)
-                new Point(0, 1)  // P3
+                new Point(1, 0),
+                new Point(0, 0),
+                new Point(0, 0),
+                new Point(0, 0),
+                new Point(0, 1)
         };
 
         assertTrue(Lic9.evaluate(), "a 90-degree angle should satisfy the condition.");
@@ -54,11 +54,11 @@ public class Lic9Test {
         Globals.PARAMETERS.EPSILON = 0.1;
 
         Globals.POINTS = new Point[]{
-                new Point(0, 0), // P1
+                new Point(0, 0),
                 new Point(1, 0),
-                new Point(2, 0), // P2 (Vertex)
+                new Point(2, 0),
                 new Point(3, 0),
-                new Point(4, 0)  // P3
+                new Point(4, 0)
         };
 
         assertFalse(Lic9.evaluate(), "a straight line (angle PI) should not satisfy the condition.");
