@@ -26,7 +26,7 @@ public class Lic12 {
 
         if (!Lic7.evaluate()) return result;
 
-        for (int i = 0; i + Parameters.K_PTS < Globals.NUMPOINTS - 1; i++) {
+        for (int i = 0; i + Parameters.K_PTS < Globals.NUMPOINTS; i++) {
             if (dist(Globals.POINTS[i], Globals.POINTS[i+Parameters.K_PTS]) < Parameters.LENGTH2) {
                 result = true;
                 break;
