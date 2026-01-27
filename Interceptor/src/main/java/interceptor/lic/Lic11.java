@@ -1,7 +1,13 @@
 package interceptor.lic;
-import interceptor.model.Point;
 import interceptor.model.Globals;
-import interceptor.model.Parameters;
+
+/**
+ * LIC 11: There exists at least one set of two data points, (X[i],Y[i]) and (X[j],Y[j]), 
+ * separated by exactly G_PTS consecutive intervening points, such that X[j] - X[i] < 0. 
+ * (where i < j)
+ * The condition is not met when NUMPOINTS < 3.
+ * 1 ≤ G_PTS ≤ NUMPOINTS − 2
+ */
 
 public final class Lic11 {
 

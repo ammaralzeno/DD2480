@@ -2,13 +2,22 @@ package interceptor.lic;
 
 import interceptor.model.Point;
 import interceptor.model.Globals;
-import interceptor.model.Parameters;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Lic11Test {
 
-    @Test 
+    /**
+     * Tests case where all conditions are met.
+     * Contract: There exists a pair of points (X[i],Y[i]) and (X[j],Y[j])
+     * (X[i],Y[i]) and (X[j],Y[j]) are separated by exactly G_PTS consecutive intervening points
+     * X[j] - X[i] < 0
+     * i < j
+     * NUMPOINTS < 3
+     * 1 ≤ G_PTS ≤ NUMPOINTS − 2
+     * Oracle: evaluate() returns true.
+     */
+    @Test
     public void testLic11Positive() {
         
         Globals.POINTS[0] = new Point(3, 3);
@@ -21,6 +30,11 @@ public class Lic11Test {
         assertTrue(Lic11.evaluate());
     }
 
+    /**
+     * Tests case where there exists no pair of points fulfill the conditions.
+     * Contract: X[j] - X[i] ≥ 0 for all pairs separated by G_PTS consecutive intervening points
+     * Oracle: evaluate() returns false.
+     */
     @Test
     public void testLic11Negative() {
 

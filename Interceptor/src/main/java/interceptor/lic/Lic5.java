@@ -1,7 +1,11 @@
 package interceptor.lic;
-import interceptor.model.Point;
 import interceptor.model.Globals;
-import interceptor.model.Parameters;
+
+/**
+ * LIC 5: There exists at least one set of two consecutive data points, 
+ * (X[i],Y[i]) and (X[j],Y[j]), such that X[j] - X[i] < 0. 
+ * (where i = j-1)
+ */
 
 public final class Lic5 {
 
