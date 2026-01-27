@@ -3,24 +3,26 @@ package interceptor.lic;
 import interceptor.model.Globals;
 import interceptor.model.Point;
 
+
+/** 
+ * LIC 14:
+ * There exists at least one set of three data points, separated by exactly E_PTS and F_PTS
+ * consecutive intervening points, respectively, that are the vertices of a triangle with
+ * area greater than AREA1.
+ * 
+ * In addition, there exists at least one (possibly different) set of three data points,
+ * separated by exactly E_PTS and F_PTS consecutive intervening points, respectively, that
+ * are the vertices of a triangle with area less than AREA2.
+ * 
+ * Both conditions must be true for the LIC to be satisfied.
+ * The condition is not met when NUMPOINTS < 5.
+ * 0 ≤ AREA2
+*/
 public final class Lic14 {
 
     private Lic14() {}
 
-    /*
-     * LIC 14:
-     * There exists at least one set of three data points, separated by exactly E_PTS and F_PTS
-     * consecutive intervening points, respectively, that are the vertices of a triangle with
-     * area greater than AREA1.
-     *
-     * In addition, there exists at least one (possibly different) set of three data points,
-     * separated by exactly E_PTS and F_PTS consecutive intervening points, respectively, that
-     * are the vertices of a triangle with area less than AREA2.
-     *
-     * Both conditions must be true for the LIC to be satisfied.
-     * The condition is not met when NUMPOINTS < 5.
-     * 0 ≤ AREA2
-     */
+    
     public static boolean evaluate() {
         int numPoints = Globals.NUMPOINTS;
         int ePts = Globals.PARAMETERS.E_PTS;

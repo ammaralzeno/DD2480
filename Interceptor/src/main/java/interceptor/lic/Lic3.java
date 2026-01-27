@@ -3,16 +3,16 @@ package interceptor.lic;
 import interceptor.model.Globals;
 import interceptor.model.Point;
 
+/** 
+ * LIC 3:
+ * Returns true if there exists at least one set of three consecutive
+ * data points that form a triangle with an area greater than AREA1.
+ * (0 ≤ AREA1)
+*/
 public final class Lic3 {
 
     private Lic3() {}
 
-    /*
-     * LIC 3:
-     * Returns true if there exists at least one set of three consecutive
-     * data points that form a triangle with an area greater than AREA1.
-     * (0 ≤ AREA1)
-     */
     public static boolean evaluate() {
         if (Globals.NUMPOINTS < 3) {
             return false;
@@ -23,7 +23,6 @@ public final class Lic3 {
             return false; 
         }
 
-        // Check each set of three consecutive points
         for (int i = 0; i <= Globals.NUMPOINTS - 3; i++) {
             Point p1 = Globals.POINTS[i];
             Point p2 = Globals.POINTS[i + 1];
