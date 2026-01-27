@@ -30,7 +30,7 @@ public class Lic7 {
 
         if (Globals.NUMPOINTS < 3) return result;
 
-        for (int i = 0; i + Parameters.K_PTS < Globals.NUMPOINTS - 1; i++) {
+        for (int i = 0; i + Parameters.K_PTS < Globals.NUMPOINTS; i++) {
             if (dist(Globals.POINTS[i], Globals.POINTS[i+Parameters.K_PTS]) > Parameters.LENGTH1) {
                 result = true;
                 break;
