@@ -9,7 +9,7 @@ public final class Parameters {
     public int QUADS;
     public double DIST;
     public int N_PTS;
-    public int K_PTS;
+    public static int K_PTS;
     public int A_PTS;
     public int B_PTS;
     public int C_PTS;
