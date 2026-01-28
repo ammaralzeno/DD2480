@@ -11,9 +11,10 @@ public final class Globals {
     public static Parameters PARAMETERS;
 
     public static Connector[][] LCM;   // [15][15]
-    public static boolean[] CMV;        // [15]
-    public static boolean[][] PUM;      // [15][15]
-    public static boolean[] FUV;        // [15]
+    public static boolean[] CMV;       // [15]
+    public static boolean[][] PUM;     // [15][15]
+    public static boolean[] FUV;       // [15]
+    public static boolean[] PUV;       // [15]
 
     public static boolean LAUNCH;
 }
