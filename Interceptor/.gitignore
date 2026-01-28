@@ -1,1 +1,47 @@
-target/
+# Maven target folder
+/target/
+
+# Eclipse / IntelliJ / VS Code project files
+/.idea/
+/.vscode/
+/*.iml
+
+# Eclipse specific
+/.classpath
+/.project
+/.settings/
+
+# IntelliJ specific
+/out/
+
+# VS Code specific
+.history/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
