@@ -23,8 +23,11 @@ mvn test
 Assessing our way of working, we believe it is currently at the “In Use” state. The team is actively using the selected tools and practices to perform real work. The way of working is supported by the team and enables communication and collaboration, although it is still evolving. To evolve further, the whole team needs to be more consistently involved in the inspection and adaptation of the way of working, so that it becomes more naturally applied across different contexts.
 
 ## Contributions
- - **Ammar Alzeno:** LIC #1, LIC #8, LIC #13, final DECIDE function, corresponding unit tests, MIT License, setup of automated tests for CI
- - **Jens Cancio:** LIC #2, LIC #6, LIC #9, corresponding unit tests
+ - **Ammar Alzeno:** LIC #1, LIC #8, LIC #13, final DECIDE function, corresponding unit tests, setup of automated tests for CI
+ - **Jens Cancio:** LIC #2, LIC #6, LIC #9, corresponding unit tests, MIT License
  - **Amanda Henrion Eskeus:** LIC #0, LIC #7, LIC #12, corresponding unit tests, README
- - **Anna Remmara:** LIC #3, LIC #10, LIC #14, PUM, corresponding unit tests, README
+ - **Anna Remmare:** LIC #3, LIC #10, LIC #14, PUM, corresponding unit tests, README
  - **Nora Wennerström:** LIC #4, LIC #5, LIC #11, FUV, corresponding unit tests
+
+## License 
+This project is licensed the MIT License.
